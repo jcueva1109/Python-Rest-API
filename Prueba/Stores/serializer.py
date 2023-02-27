@@ -10,3 +10,8 @@ class BrandSerializer(serializers.ModelSerializer):
     class Meta: 
         model = Brand
         fields = ('id','name','logo')
+
+class DealSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Deal
+        fields = ('id','name','store','image','price')

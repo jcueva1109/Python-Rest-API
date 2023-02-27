@@ -16,3 +16,9 @@ def getBrands(request):
     brand = Brand.objects.all()
     serializer = BrandSerializer(brand, many=True)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def getDeals(request):
+    deal = Deal.objects.all()
+    serializer = DealSerializer(deal, many=True)
+    return Response(serializer.data)

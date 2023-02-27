@@ -12,3 +12,10 @@ class Brand(models.Model):
     id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=255)
     logo = models.URLField()
+
+class Deal(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=255)
+    store = models.IntegerField()
+    image = models.URLField()
+    price = models.FloatField()

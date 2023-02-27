@@ -5,4 +5,5 @@ from django.conf import settings
 urlpatterns = [
     path('stores',views.getStores),
     path('brands',views.getBrands),
+    path('deals',views.getDeals),
 ]
